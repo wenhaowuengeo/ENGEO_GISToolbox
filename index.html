@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="ENGEOLOGO_Favicon 1.png">
+    <title>ENGEO GIS Toolbox</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/">
+    <link href="src/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+
+    <script src="https://js.arcgis.com/4.20/"></script>
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div class="px-4 py-5 my-5 text-center">
+        <div class="jumbotron">
+            <div class="container">
+                <!-- TODO - add an icon -->
+                <h2 class="display-4">ENGEO GIS Toolbox</h2>
+                <!-- style="text-align: center; width: 50%;" -->
+                <div class="row" style="margin:auto; width:50%;">
+                    <p class="lead ">This is a home site to access ENGEO GIS automation tools, developed by the Graphics department at ENGEO. Find the tool you want to use and click the button to access it in a new page. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Help doc &raquo;</a></p>
+                    <hr class="my-4 ">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container ">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="siteaccess_cover.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Site Access</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p><a class="btn btn-primary " href="https://wenhaowuengeo.github.io/siteAccess_GPRunner/" target="_blank" role="button ">Run the Tool &raquo;</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="edd_card_cover.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">EDD Tables</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p><a class="btn btn-primary " href="https://wenhaowuengeo.github.io/EDD_GPRunner/" target="_blank" role="button ">Run the Tool &raquo;</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="photogen_cover.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Photo Generator</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p><a class="btn btn-primary " href="https://www.engeo.com/" target="_blank" role="button ">Run the Tool &raquo;</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TODO - reference below -->
+            <!-- <div class="row ">
+                <div class="col-md-4 ">
+                    <h2>Site Access</h2>
+                    <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    </p>
+                    <p><a class="btn btn-primary " href="https://wenhaowuengeo.github.io/siteAccess_GPRunner/" role="button ">Run the Tool &raquo;</a></p>
+                </div>
+                <div class="col-md-4 ">
+                    <h2>EDD Tables</h2>
+                    <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    </p>
+                    <p><a class="btn btn-primary " href="https://wenhaowuengeo.github.io/EDD_GPRunner/" role="button ">Run the Tool &raquo;</a></p>
+                </div>
+                <div class="col-md-4 ">
+                    <h2>Photo Generator</h2>
+                    <p class="lead">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
+                        amet risus.</p>
+                    <p><a class="btn btn-primary " href="# " role="button ">Run the Tool &raquo;</a></p>
+                </div>
+            </div> -->
+
+            <hr>
+
+        </div>
+
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center ">
+            <div class="column ">
+                <p>Find the tool you want to use and click the button to access it in a new page.</p>
+                <button id="checkID " type="button " class="btn btn-primary btn-lg px-4 gap-3 " style="background-color:#0054A4 ">Site Access Submission</button>
+
+                <button id="runButtonID " onclick="runFunc() " type="button " class="btn btn-primary btn-lg px-4 gap-3 " style="background-color:#0054A4 ">EDD Table Converter</button>
+
+                <button id="runButtonID " onclick="runFunc() " type="button " class="btn btn-primary btn-lg px-4 gap-3 " style="background-color:#0054A4 ">Photo Generator</button>
+            </div>
+            <div id="fileInfo "></div>
+
+        </div>
+        <div id="checkDivText "></div>
+
+        <pre id="jsonData "></pre>
+
+    </div>
+    </div>
+</body>
+
+</html>
