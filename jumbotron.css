@@ -1,4 +1,20 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
+
 body {
-  padding-top: 3.5rem;
+    padding-top: 3.5rem;
+}
+
+.card {
+    /* Styles for the card */
+    /* width: 200px; */
+    /* Example width */
+    /* height: 300px; */
+    /* Example height */
+    transition: box-shadow 0.3s ease;
+    /* Transition for smooth effect */
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    /* Shadow properties */
 }
